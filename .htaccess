@@ -1,0 +1,6 @@
+DirectoryIndex icompanyrt.php
+RewriteEngine On
+RewriteCond %{HTTPS} Off
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^home$ index.php [QSA,L,NC]

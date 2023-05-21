@@ -1,0 +1,17 @@
+{
+    "name": "cairo/nortelink",
+    "autoload": {
+        "psr-4": {
+            "Cairo\\Nortelink\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cairo",
+            "email": "cairofelipedev@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.6"
+    }
+}

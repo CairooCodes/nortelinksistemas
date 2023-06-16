@@ -1,4 +1,4 @@
-DirectoryIndex icompanyrt.php
+DirectoryIndex home.php
 RewriteEngine On
 RewriteCond %{HTTPS} Off
 RewriteCond %{SCRIPT_FILENAME} !-f

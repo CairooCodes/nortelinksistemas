@@ -35,25 +35,28 @@
 </head>
 
 <body class="bg-color2">
-  <div class="mx-auto max-w-6xl">
+  <div class="mx-auto max-w-xl p-4">
     <header class="flex justify-center py-4">
       <img class="w-56" src="./assets/img/logo.png">
     </header>
-    <h5 class="text-white text-center text-xl py-4 font-bold">Conheça SinCom! Nossa ferramenta que melhora a eficiência e competitividade de seus negócios.</h5>
-    <h5 class="text-white text-center text-3xl py-4 font-bold">SEGMENTOS</h5>
+    <h5 class="text-white text-center text-justify text-lg py-4 font-bold">Conheça SinCom! Nossa ferramenta que melhora a eficiência e competitividade de seus negócios.</h5>
+    <h5 class="text-white text-center text-xl py-4 font-bold">Confira alguns de nossos segmentos e casos de sucesso</h5>
     <a href="sincon/farmacia.php">
       <div class="flex justify-center">
-        <button class="rounded-3xl bg-color1 py-4 px-4 w-full text-white">FÁRMACIA</button>
+        <button class="animate-fade-in-0 rounded-3xl bg-color1 py-4 px-4 w-full text-white">FÁRMACIA</button>
       </div>
     </a>
     <div class="flex justify-center mt-4">
-      <button class="rounded-3xl bg-color1 py-4 px-4 w-full text-white">CONSTRUÇÃO</button>
+      <button class="animate-fade-in-1 rounded-3xl bg-color1 py-4 px-4 w-full text-white">CONSTRUÇÃO</button>
     </div>
     <div class="flex justify-center mt-4">
-      <button class="rounded-3xl bg-color1 py-4 px-4 w-full text-white">CALÇADOS</button>
+      <button class="animate-fade-in-delay-3 rounded-3xl bg-color1 py-4 px-4 w-full text-white">CALÇADOS</button>
     </div>
     <div class="flex justify-center mt-4">
-      <button class="rounded-3xl bg-color1 py-4 px-4 w-full text-white">SUPERMERCADO</button>
+      <button class="animate-fade-in-delay-4 rounded-3xl bg-color1 py-4 px-4 w-full text-white">SUPERMERCADO</button>
+    </div>
+    <div class="animate-fade-in-delay-5 flex justify-center mt-4">
+      <button class="rounded-3xl bg-color1 py-4 px-4 w-full text-white">CONTATO</button>
     </div>
   </div>
 

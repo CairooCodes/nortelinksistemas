@@ -1,7 +1,7 @@
 <?php
 require_once('../../db_config.php');
 
-$stmt = $DB_con->prepare("SELECT * FROM rd_station");
+$stmt = $pdo->prepare("SELECT * FROM rd_station");
 $stmt->execute();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
   extract($row);
@@ -22,7 +22,7 @@ $client = new Client([
 
 try {
   $response = $client->request('POST', 'https://api.rd.services/platform/contacts', [
-    'body' => '{"name":"' . $name . '","email":"' . $email . '","mobile_phone":"' . $whatsapp . '"}',
+    'body' => '{"name":"' . $name . '","email":"' . $email . '","mobile_phone":"' . $whatsapp . '","tags": ["site_farmacia"]}',
     'headers' => [
       'accept' => 'application/json',
       'authorization' => 'Bearer ' . $acess_token . '',
@@ -34,7 +34,6 @@ try {
         alert("Obrigado pelo contato! Em instantes nosso time entrará em contato com você");
         window.location.href = "../../home.php";
         </script>';
-
 } catch (RequestException $e) {
   if ($e->hasResponse()) {
     $response = $e->getResponse();
@@ -47,7 +46,9 @@ try {
             window.location.href = "../../home.php";
             </script>';
     } else {
-      echo '<script>alert("Erro. Tente novamente");</script>';
+      echo '<script>
+            alert("Erro. Tente novamente");
+          </script>';
     }
   } else {
     echo '<script>alert("Erro. Tente novamente");</script>';

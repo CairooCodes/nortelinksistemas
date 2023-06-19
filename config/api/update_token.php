@@ -22,7 +22,7 @@ if ($response->getStatusCode() == 200) {
   $content = json_decode($body, true);
   $valorExtraido = $content['access_token'];
 
-  $stmt = $DB_con->prepare("UPDATE rd_station SET acess_token = :valor");
+  $stmt = $pdo->prepare("UPDATE rd_station SET acess_token = :valor");
   $stmt->bindValue(':valor', $valorExtraido);
   $stmt->execute();
 }

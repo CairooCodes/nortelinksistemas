@@ -71,13 +71,13 @@
   </div>
   <section>
       <div>
-        <img class="hidden lg:block w-full" src="../assets/img/Banners_supermercadoDesktop_copiar.jpg" />
-        <img class="lg:hidden block w-full" src="../assets/img/Banners_supermercadoMobile_copiar.jpg" />
+        <img class="hidden lg:block w-full" src="../assets/img/BannersconstruçãoDesktop.jpg" />
+        <img class="lg:hidden block w-full" src="../assets/img/Banners22construçãoMobile.jpg" />
       </div>
   </section>
   <section class="pt-10">
-    <img class="hidden lg:block w-full" src="../assets/img/Banners_supermercadoDesktop.jpg" />
-    <img class="lg:hidden block w-full" src="../assets/img/Banners_supermercadoMobile.jpg" />
+    <img class="hidden lg:block w-full" src="../assets/img/Banners1111construçãoDesktop.jpg" />
+    <img class="lg:hidden block w-full" src="../assets/img/Bannersconstrução22Mobile.jpg" />
   </section>
   <div class="flex items-center p-3 md:p-0" id="saiba-mais">
     <div class="container mx-auto">

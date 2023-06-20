@@ -32,8 +32,6 @@
 			}
 		}
 	</script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="./assets/css/swiper.css">
 </head>
 
 
@@ -71,12 +69,10 @@
 		</nav>
 	</header>
 	</div>
-	<section class="swiper swiper_banners">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide shadow">
-				<img class="hidden lg:block w-full" src="../assets/img/Banners_farmaciaDesktop_copiar.jpg" />
-				<img class="lg:hidden block w-full" src="../assets/img/Banners_farmaciaMobile_copiar.jpg" />
-			</div>
+	<section>
+		<div>
+			<img class="hidden lg:block w-full" src="../assets/img/Banners_farmaciaDesktop_copiar.jpg" />
+			<img class="lg:hidden block w-full" src="../assets/img/Banners_farmaciaMobile_copiar.jpg" />
 		</div>
 	</section>
 	<section class="pt-10">
@@ -147,38 +143,6 @@
 
 	<script src="./assets/js/dark_mode.js"></script>
 	<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-	<script>
-		var swiper = new Swiper(".swiper_banners", {
-			slidesPerView: 1.0
-		});
-	</script>
-	<script>
-		var swiper = new Swiper(".swiper_products", {
-			autoplay: {
-				delay: 5000,
-			},
-			breakpoints: {
-				300: {
-					slidesPerView: 1.1,
-					spaceBetween: 10,
-				},
-				640: {
-					slidesPerView: 2,
-					spaceBetween: 30,
-				},
-				768: {
-					slidesPerView: 3,
-					spaceBetween: 30,
-				},
-				1024: {
-					slidesPerView: 3,
-					spaceBetween: 30,
-				},
-			},
-		});
-	</script>
 </body>
 
 </html>

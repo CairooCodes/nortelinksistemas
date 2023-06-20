@@ -128,3 +128,15 @@ footer i {
 .animate-fade-in-1 {
   animation: fade-in 2s ease-out;
 }
+
+.animate-fade-in-2 {
+  animation: fade-in 3s ease-out;
+}
+
+.animate-fade-in-3 {
+  animation: fade-in 4s ease-out;
+}
+
+.animate-fade-in-4 {
+  animation: fade-in 5s ease-out;
+}

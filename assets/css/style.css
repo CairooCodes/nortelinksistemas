@@ -109,7 +109,22 @@ footer i {
 
 @media (min-width: 769px) {}
 
-@media (max-width: 768px) {}
+.bg-1::before,
+.bg-2::before,
+.bg-3::before,
+.bg-4::before {
+  width: 43%;
+}
+
+@media (max-width: 768px) {
+
+  .bg-1::before,
+  .bg-2::before,
+  .bg-3::before,
+  .bg-4::before {
+    width: 92%;
+  }
+}
 
 @keyframes fade-in {
   0% {
@@ -139,4 +154,100 @@ footer i {
 
 .animate-fade-in-4 {
   animation: fade-in 2.5s ease-out;
+}
+
+.bg-1 {
+  background-image: url('../img/homesupermercado.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130px;
+}
+
+.bg-1 button {
+  font-size: 28px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 1px 5px 1px #2C284B;
+  z-index: 2;
+}
+
+.bg-1::before {
+  content: "";
+  position: absolute;
+  top: 30;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Opacidade de 0.5 (50%) */
+}
+
+.bg-2 {
+  background-image: url('../img/farmaciahome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130px;
+}
+
+.bg-2 button {
+  font-size: 28px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 1px 5px 1px #2C284B;
+  z-index: 2;
+}
+
+.bg-2::before {
+  content: "";
+  position: absolute;
+  top: 30;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Opacidade de 0.5 (50%) */
+}
+
+.bg-3 {
+  background-image: url('../img/bannerhomeconstrucao.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130px;
+}
+
+.bg-3 button {
+  font-size: 28px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 1px 5px 1px #2C284B;
+  z-index: 2;
+}
+
+.bg-3::before {
+  content: "";
+  position: absolute;
+  top: 30;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Opacidade de 0.5 (50%) */
+}
+
+.bg-4 {
+  background-image: url('../img/calcadoshome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130px;
+}
+
+.bg-4 button {
+  font-size: 28px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 1px 5px 1px #2C284B;
+  z-index: 2;
+}
+
+.bg-4::before {
+  content: "";
+  position: absolute;
+  top: 30;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Opacidade de 0.5 (50%) */
 }

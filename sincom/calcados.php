@@ -2,40 +2,11 @@
 <html lang="pt-br">
 
 <head>
-  <title>Norte Link - iCompany RT</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="iCompany RT, Rt, Norte, Link, Sistemas, Gestão Comercial, Varejo, Atacado, Comercial, Sistema para Varejo, Sistema Comercial" name="keywords">
-  <meta content="GESTÃO COMERCIAL INTEGRADA PARA VAREJO E ATACADO" name="description">
-  <meta name="author" content="Cairo Felipe Developer">
-
-  <meta property="og:title" content="Norte Link - iCompany RT" />
-  <meta property="og:url" content="icompanyrt.nortelink.com.br" />
-  <meta property="og:image" content="/assets/img/logo" />
-  <meta property="og:description" content="GESTÃO COMERCIAL INTEGRADA PARA VAREJO E ATACADO" />
-
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link href="./assets/img/icon.png" rel="icon">
-  <link href="./assets/img/icon.png" rel="apple-touch-icon">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <title>Norte Link - SinCom para Calçados</title>
+  <?php include "../components/head_core.php"; ?>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/swiper.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            color1: '#26A44E',
-            color2: '#2C284B',
-            color3: '#FFFFFF',
-          }
-        }
-      }
-    }
-  </script>
 </head>
-
 
 <body>
   <?php include "../components/navbar.php"; ?>
@@ -59,7 +30,7 @@
           <p class="my-3 text-white text-lg md:text-2xl font-semibold">Preencha o formulário para mais informações</p>
         </div>
         <div class="m-7">
-          <form action="../config/api/create_lead_farmacia.php" method="POST">
+          <form action="../config/api/create_lead_calcados.php" method="POST">
             <div class="mb-6">
               <label for="name" class="block mb-2 text-sm text-white">Nome completo</label>
               <input type="text" name="name" placeholder="Digite aqui seu nome" class="w-full px-3 py-2 placeholder-gray-600 border border-gray-600 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />

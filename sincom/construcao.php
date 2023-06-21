@@ -26,7 +26,7 @@
           <h1 class="my-3 text-color2 text-lg md:text-2xl font-semibold">Preencha o formulário para mais informações</h1>
         </div>
         <div class="m-7">
-          <form action="../config/api/create_lead_farmacia.php" method="POST">
+          <form action="../config/api/create_lead_construcao.php" method="POST">
             <div class="mb-6">
               <label for="name" class="block mb-2 text-sm text-black">Nome completo</label>
               <input type="text" name="name" placeholder="Digite aqui seu nome" class="w-full px-3 py-2 placeholder-gray-600 border border-gray-600 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />

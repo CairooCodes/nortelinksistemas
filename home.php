@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Norte Link - Sincon</title>
+  <title>Norte Link - SinCom</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,26 +39,28 @@
     <header class="flex justify-center py-4">
       <img class="w-56" src="./assets/img/logo_branca.png">
     </header>
-    <h5 class="text-white text-center text-justify text-lg py-4 font-medium">Conheça SinCon! Nossa ferramenta que melhora a eficiência e competitividade de seus negócios.</h5>
+    <h5 class="text-white text-center text-justify text-lg py-4 font-medium">Conheça SinCom! Nossa ferramenta que melhora a eficiência e competitividade de seus negócios.</h5>
     <h5 class="text-white text-center text-xl py-4 font-bold">Confira alguns de nossos segmentos</h5>
-    <a href="sincon/supermercado.php">
-      <div class="flex justify-center">
-        <button class="animate-fade-in-0 rounded-3xl bg-color1 py-4 px-4 w-full text-white">SUPERMERCADO</button>
+    <a href="sincom/supermercado.php">
+      <div>
+        <div class="flex justify-center bg-1">
+          <button class="animate-fade-in-0 rounded-3xl py-4 px-4 w-full text-white">SUPERMERCADO</button>
+        </div>
       </div>
     </a>
-    <a href="sincon/farmacia.php">
-      <div class="flex justify-center mt-4">
-        <button class="animate-fade-in-1 rounded-3xl bg-color1 py-4 px-4 w-full text-white">FÁRMACIA</button>
+    <a href="sincom/farmacia.php">
+      <div class="flex justify-center mt-4 bg-2">
+        <button class="animate-fade-in-1 rounded-3xl py-4 px-4 w-full text-white">FARMÁCIA</button>
       </div>
     </a>
-    <a href="sincon/construcao.php">
-      <div class="flex justify-center mt-4">
-        <button class="animate-fade-in-2 rounded-3xl bg-color1 py-4 px-4 w-full text-white">CONSTRUÇÃO</button>
+    <a href="sincom/construcao.php">
+      <div class="flex justify-center mt-4 bg-3">
+        <button class="animate-fade-in-2 rounded-3xl py-4 px-4 w-full text-white">CONSTRUÇÃO</button>
       </div>
     </a>
-    <a href="sincon/calcados.php">
-      <div class="flex justify-center mt-4">
-        <button class="animate-fade-in-3 rounded-3xl bg-color1 py-4 px-4 w-full text-white">CALÇADOS</button>
+    <a href="sincom/calcados.php">
+      <div class="flex justify-center mt-4 bg-4">
+        <button class="animate-fade-in-3 rounded-3xl py-4 px-4 w-full text-white">CALÇADOS</button>
       </div>
     </a>
   </div>

@@ -11,7 +11,7 @@
   <meta name="author" content="Cairo Felipe Developer">
 
   <meta property="og:title" content="Norte Link - SinCom" />
-  <meta property="og:url" content="icompanyrt.nortelink.com.br" />
+  <meta property="og:url" content="https://sincom.nortelink.com.br/" />
   <meta property="og:image" content="/assets/img/logo" />
   <meta property="og:description" content="GESTÃO COMERCIAL INTEGRADA PARA VAREJO E ATACADO" />
 

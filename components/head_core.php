@@ -1,13 +1,13 @@
 <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta content="iCompany RT, Rt, Norte, Link, Sistemas, Gestão Comercial, Varejo, Atacado, Comercial, Sistema para Varejo, Sistema Comercial" name="keywords">
+	<meta content="SinCom, Norte, Link, Sistemas, Gestão Comercial, Varejo, Atacado, Comercial, Sistema para Varejo, Sistema Comercial" name="keywords">
 	<meta content="GESTÃO COMERCIAL INTEGRADA PARA VAREJO E ATACADO" name="description">
 	<meta name="author" content="Cairo Felipe Developer">
 
-	<meta property="og:title" content="Norte Link - iCompany RT" />
-	<meta property="og:url" content="icompanyrt.nortelink.com.br" />
-	<meta property="og:image" content="/assets/img/logo" />
+	<meta property="og:title" content="Norte Link - SinCom" />
+	<meta property="og:url" content="https://sincom.nortelink.com.br/" />
+	<meta property="og:image" content="https://sincom.nortelink.com.br/assets/img/logo.png" />
 	<meta property="og:description" content="GESTÃO COMERCIAL INTEGRADA PARA VAREJO E ATACADO" />
 
 	<link rel="stylesheet" href="../assets/css/style.css">

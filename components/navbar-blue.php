@@ -1,7 +1,7 @@
 <header class="w-full shadow-lg">
   <nav class="border-gray-200 py-2.5 bg-color2">
     <div class="flex flex-wrap items-center justify-between max-w-6xl px-4 mx-auto">
-      <a href="/">
+      <a href="../home.php">
         <img src="../assets/img/logo_branca.png" class="logo" alt="Norte Link" />
       </a>
       <div class="flex items-center lg:order-2">

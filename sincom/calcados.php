@@ -18,12 +18,12 @@
       </div>
       <div class="swiper-slide shadow">
         <img class="hidden lg:block w-full" src="../assets/img/Banners calçadosDesktop copiar.jpg" />
-        <img class="lg:hidden block w-full" src="../assets/img/Banners calçadosMobile copiar.jpg" />
+        <img class="lg:hidden block w-full" src="../assets/img/Banners calçadosMobilecopiar.jpg" />
       </div>
     </div>
   </section>
 
-  <div class="flex items-center p-3 md:p-0">
+  <div class="flex items-center p-3 md:p-0 py-10">
     <div class="container mx-auto">
       <div class="max-w-xl mx-auto md:my-5 bg-color2 p-2 md:p-5 rounded-md shadow-sm">
         <div class="text-center">

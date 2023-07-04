@@ -1,6 +1,6 @@
 <footer class="bg-color3 border border-gray-300">
   <div class="max-w-6xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
-    <div class="grid grid-cols-2">
+    <div class="lg:grid lg:grid-cols-2">
       <div>
         <img class="w-56" src="../assets/img/logo.png">
         <i class="bi bi-whatsapp"></i>

@@ -11,7 +11,7 @@
   <section>
     <div>
       <img class="hidden lg:block w-full" src="../assets/img/BannersconstruçãoDesktop.jpg" />
-      <img class="lg:hidden block w-full" src="../assets/img/Banners22construçãoMobile.jpg" />
+      <img class="lg:hidden block w-full" src="../assets/img/Banners construçãoMobilecopiar.jpg" />
     </div>
   </section>
   <section class="pt-10">
@@ -19,7 +19,7 @@
     <img class="lg:hidden block w-full" src="../assets/img/Bannersconstrução22Mobile.jpg" />
   </section>
 
-  <div class="flex items-center p-3 md:p-0 bg-color2">
+  <div class="flex items-center p-3 md:p-0 bg-color2 py-10">
     <div class="container mx-auto">
       <div class="max-w-xl mx-auto md:my-5 bg-white p-2 md:p-5 rounded-md shadow-sm">
         <div class="text-center">

@@ -1,3 +1,9 @@
+<?php
+require "../db_config.php";
+require "../functions/get.php";
+
+$functions2 = getFunctionsGeral();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -53,6 +59,42 @@
       </div>
     </div>
   </div>
+
+  <section class="mx-auto max-w-4xl px-2 pt-4 mt-5">
+    <h1 class="title-font font-semibold text-center text-4xl pt-4 px-2 mb-16">Nossas outras ferramentas</h1>
+    <div class="grid lg:grid-cols-2 gap-9">
+      <?php foreach ($functions2 as $function2) { ?>
+        <div class="">
+          <div class="flex items-center justify-center">
+            <?php
+            if (!empty($function2['img'])) {
+              $img = base64_encode($function2['img']);
+              echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
+            }
+            ?>
+            <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+              <?php echo $function2['name']; ?>
+            </h1>
+          </div>
+          <div>
+            <h1 class="title-font mb-1 text-center text-lg h-12 pt-2 text-justify">
+              <?php echo $function2['description']; ?>
+            </h1>
+            <div class="flex justify-center mt-10">
+              <a href="#">
+                <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+                  Saiba Mais
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+  </section>
+
   <?php include "../components/footer.php"; ?>
   <script src="./assets/js/dark_mode.js"></script>
   <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>

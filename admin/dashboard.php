@@ -90,6 +90,9 @@ $page = 'dash';
                 Nome
               </th>
               <th scope="col" class="px-6 py-3">
+                Tipo
+              </th>
+              <th scope="col" class="px-6 py-3">
                 Ação
               </th>
             </tr>
@@ -104,9 +107,12 @@ $page = 'dash';
                     echo "<img class='w-10' src='data:image/jpeg;base64," . $img . "'>";
                   }
                   ?>
-                  <div class="pl-3">
+                  <div class="px-6 py-4">
                     <div class="text-base font-semibold"><?php echo $function['name']; ?></div>
                   </div>
+                  <th class="px-6 py-4 ">
+                    <div class="text-base font-semibold"><?php echo $function['categorie_id']; ?></div>
+                </th>
                 </th>
                 <td class="px-6 py-4">
                   <a href="./editar_funcao.php?id=<?php echo $function['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>

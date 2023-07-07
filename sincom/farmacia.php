@@ -2,6 +2,7 @@
 require "../db_config.php";
 require "../functions/get.php";
 
+$functions = getFunctionsFarmacia();
 $functions2 = getFunctionsGeral();
 ?>
 <!DOCTYPE html>
@@ -20,7 +21,8 @@ $functions2 = getFunctionsGeral();
 			<img class="lg:hidden block w-full" src="../assets/img/Banners farmaciaMobilecopiar.jpg" />
 		</div>
 	</section>
-	<section class="mx-auto max-w-4xl px-2 pt-4">
+	
+	<section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-5">
 		<div class="grid lg:grid-cols-3 gap-8">
 			<?php foreach ($functions as $function) { ?>
 				<div class="">
@@ -39,7 +41,7 @@ $functions2 = getFunctionsGeral();
 						<h1 class="title-font mb-1 text-center text-lg h-12 pt-2">
 							<?php echo $function['description']; ?>
 						</h1>
-						<div class="flex justify-center">
+						<div class="flex justify-center mt-10">
 							<a href="#">
 								<button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
 									Saiba Mais

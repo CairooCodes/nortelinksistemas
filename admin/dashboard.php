@@ -23,7 +23,7 @@ $page = 'dash';
 <html lang="pt-br">
 
 <head>
-  <title>Dashboard de Inscrições APCEF/PI</title>
+  <title>Dashboard Nortelink Sistemas</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,7 +115,7 @@ $page = 'dash';
                 </th>
                 </th>
                 <td class="px-6 py-4">
-                  <a href="./editar_funcao.php?id=<?php echo $function['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>
+                  <a href="./editar_function.php?id=<?php echo $function['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>
                   <a href="./controllers/delete_function.php?id=<?php echo $function['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>
               </tr>

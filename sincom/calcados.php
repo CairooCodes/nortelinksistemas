@@ -2,6 +2,7 @@
 require "../db_config.php";
 require "../functions/get.php";
 
+$functions = getFunctionsCalcados();
 $functions2 = getFunctionsGeral();
 ?>
 <!DOCTYPE html>

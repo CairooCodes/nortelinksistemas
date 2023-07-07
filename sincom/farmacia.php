@@ -1,3 +1,9 @@
+<?php
+require "../db_config.php";
+require "../functions/get.php";
+
+$functions = getFunctionsFarmacia();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,9 +20,38 @@
 			<img class="lg:hidden block w-full" src="../assets/img/Banners farmaciaMobilecopiar.jpg" />
 		</div>
 	</section>
-	<section class="pt-10">
-		<img class="hidden lg:block w-full" src="../assets/img/farmacia1.jpg" />
-		<img class="lg:hidden block w-full" src="../assets/img/farmacia2.jpg" />
+	<section class="mx-auto max-w-4xl px-2 pt-4">
+		<div class="grid lg:grid-cols-3 gap-8">
+			<?php foreach ($functions as $function) { ?>
+				<div class="">
+					<div class="flex items-center justify-center">
+						<?php
+						if (!empty($function['img'])) {
+							$img = base64_encode($function['img']);
+							echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
+						}
+						?>
+						<h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+							<?php echo $function['name']; ?>
+						</h1>
+					</div>
+					<div>
+						<h1 class="title-font mb-1 text-center text-lg h-12 pt-2">
+							<?php echo $function['description']; ?>
+						</h1>
+						<div class="flex justify-center">
+							<a href="#">
+								<button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+									Saiba Mais
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			<?php
+			}
+			?>
+		</div>
 	</section>
 
 	<div class="flex items-center p-3 md:p-0 bg-color2 py-10">

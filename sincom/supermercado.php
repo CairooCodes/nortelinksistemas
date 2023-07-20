@@ -22,11 +22,11 @@ $functions2 = getFunctionsGeral();
     </div>
   </section>
 
-  <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-5">
-		<div class="grid lg:grid-cols-3 gap-8">
+  <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-12">
+		<div class="grid lg:grid-cols-3 gap-9">
 			<?php foreach ($functions as $function) { ?>
-				<div class="">
-					<div class="flex items-center justify-center">
+				<div class="border-t-4 border-b-4 border-color1 rounded-lg">
+					<div class="flex items-center justify-center mt-2">
 						<?php
 						if (!empty($function['img'])) {
 							$img = base64_encode($function['img']);
@@ -38,16 +38,16 @@ $functions2 = getFunctionsGeral();
 						</h1>
 					</div>
 					<div>
-						<h1 class="title-font mb-1 text-center text-lg h-12 pt-2">
+						<h1 class="title-font mb-1 text-center text-lg pt-5">
 							<?php echo $function['description']; ?>
 						</h1>
-						<div class="flex justify-center mt-10">
+						<!-- <div class="flex justify-center mt-10">
 							<a href="#">
 								<button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
 									Saiba Mais
 								</button>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			<?php
@@ -104,14 +104,14 @@ $functions2 = getFunctionsGeral();
             </h1>
           </div>
           <div>
-            <h1 class="title-font mb-1 text-center text-lg h-12 pt-2 text-justify">
+            <h1 class="title-font mb-1 text-center text-lg h-12 pt-5 text-justify">
               <?php echo $function2['description']; ?>
             </h1>
-            <div class="flex justify-center mt-10">
+            <div class="flex justify-center mt-12 mb-5">
               <a href="#">
-                <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
                   Saiba Mais
-                </button>
+                </button> -->
               </a>
             </div>
           </div>

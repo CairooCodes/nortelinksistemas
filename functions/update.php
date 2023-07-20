@@ -38,6 +38,7 @@ function updateFunction($id, $name, $img, $description, $categorie_id)
     $img_lob = $img . PDO::PARAM_LOB;
     $stmt = $pdo->prepare("UPDATE functions SET name = :name, img = :img, description = :description, categorie_id = :categorie_id WHERE id = :id");
     $stmt->bindParam(':name', $name);
+    $stmt->bindValue(':img', $img_lob, PDO::PARAM_LOB);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':categorie_id', $categorie_id);
     $stmt->bindParam(':id', $id);

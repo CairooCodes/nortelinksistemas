@@ -16,8 +16,8 @@ $functions2 = getFunctionsGeral();
 </head>
 
 <body>
-  <?php include "../components/navbar.php"; ?>
-  <section class="swiper swiper_banners">
+  <?php include "../components/navbar-blue.php"; ?>
+  <!-- <section class="swiper swiper_banners">
     <div class="swiper-wrapper">
       <div class="swiper-slide shadow">
         <img class="hidden lg:block w-full" src="../assets/img/Banners calçadosDesktop.jpg" />
@@ -28,9 +28,49 @@ $functions2 = getFunctionsGeral();
         <img class="lg:hidden block w-full" src="../assets/img/Banners calçadosMobilecopiar.jpg" />
       </div>
     </div>
+  </section> -->
+  <section>
+    <div>
+      <img class="hidden lg:block w-full" src="../assets/img/BannersconstruçãoDesktop.jpg" />
+      <img class="lg:hidden block w-full" src="../assets/img/Banners construçãoMobilecopiar.jpg" />
+    </div>
   </section>
 
-  <div class="flex items-center p-3 md:p-0 py-10">
+  <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-12">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <?php foreach ($functions as $function) { ?>
+        <div class="border-t-4 border-b-4 border-color1 rounded-lg">
+          <div class="flex items-center justify-center mt-2">
+            <?php
+            if (!empty($function['img'])) {
+              $img = base64_encode($function['img']);
+              echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
+            }
+            ?>
+            <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+              <?php echo $function['name']; ?>
+            </h1>
+          </div>
+          <div>
+            <h1 class="title-font mb-1 text-center text-lg pt-5">
+              <?php echo $function['description']; ?>
+            </h1>
+            <!-- <div class="flex justify-center">
+							<a href="#">
+								<button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+									Saiba Mais
+								</button>
+							</a>
+						</div> -->
+          </div>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+  </section>
+
+  <div class="flex items-center p-3 md:p-0 bg-color2 py-10">
     <div class="container mx-auto">
       <div class="max-w-xl mx-auto md:my-5 bg-color2 p-2 md:p-5 rounded-md shadow-sm">
         <div class="text-center">
@@ -61,7 +101,7 @@ $functions2 = getFunctionsGeral();
     </div>
   </div>
 
-  <section class="mx-auto max-w-4xl px-2 pt-4 mt-5">
+  <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-12">
     <h1 class="title-font font-semibold text-center text-4xl pt-4 px-2 mb-16">Nossas outras ferramentas</h1>
     <div class="grid lg:grid-cols-2 gap-9">
       <?php foreach ($functions2 as $function2) { ?>
@@ -78,14 +118,14 @@ $functions2 = getFunctionsGeral();
             </h1>
           </div>
           <div>
-            <h1 class="title-font mb-1 text-center text-lg h-12 pt-2 text-justify">
+            <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $function2['description']; ?>
             </h1>
-            <div class="flex justify-center mt-10">
+            <div class="flex justify-center mt-12 mb-5">
               <a href="#">
-                <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
                   Saiba Mais
-                </button>
+                </button> -->
               </a>
             </div>
           </div>

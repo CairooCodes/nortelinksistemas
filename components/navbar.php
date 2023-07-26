@@ -1,8 +1,8 @@
 <header class="w-full shadow-lg">
   <nav class="border-gray-200 py-2.5 bg-color3 shadow">
     <div class="flex flex-wrap items-center justify-between max-w-6xl px-4 mx-auto">
-      <a href="../home.php">
-        <img src="../assets/img/logo.png" class="logo" alt="Norte Link" />
+      <a href="home.php">
+        <img src="./assets/img/logo.png" class="logo" alt="Norte Link" />
       </a>
       <div class="flex items-center lg:order-2">
         <div class="nav_icons px-4 flex space-x-2">

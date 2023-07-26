@@ -10,9 +10,9 @@
 	<meta property="og:image" content="https://sincom.nortelink.com.br/assets/img/logo.png" />
 	<meta property="og:description" content="Conheça SinCom! Nossa ferramenta que melhora a eficiência e competitividade de seus negócios." />
 
-	<link rel="stylesheet" href="../assets/css/style.css">
-	<link href="../assets/img/icon.png" rel="icon">
-	<link href="../assets/img/icon.png" rel="apple-touch-icon">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link href="./assets/img/icon.png" rel="icon">
+	<link href="./assets/img/icon.png" rel="apple-touch-icon">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script>
 		tailwind.config = {

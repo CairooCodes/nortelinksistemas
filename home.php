@@ -41,24 +41,24 @@
     </header>
     <h5 class="text-white text-center text-justify text-lg py-4 font-medium">Conheça SinCom! Nossa ferramenta que melhora a eficiência e competitividade de seus negócios.</h5>
     <h5 class="text-white text-center text-xl py-4 font-bold">Confira alguns de nossos segmentos</h5>
-    <a href="sincom/supermercado.php">
+    <a href="supermercado">
       <div>
         <div class="flex justify-center bg-1">
           <button class="animate-fade-in-0 rounded-3xl py-4 px-4 w-full text-white">SUPERMERCADO</button>
         </div>
       </div>
     </a>
-    <a href="sincom/farmacia.php">
+    <a href="farmacia">
       <div class="flex justify-center mt-4 bg-2">
         <button class="animate-fade-in-1 rounded-3xl py-4 px-4 w-full text-white">FARMÁCIA</button>
       </div>
     </a>
-    <a href="sincom/construcao.php">
+    <a href="construcao">
       <div class="flex justify-center mt-4 bg-3">
         <button class="animate-fade-in-2 rounded-3xl py-4 px-4 w-full text-white">CONSTRUÇÃO</button>
       </div>
     </a>
-    <a href="sincom/calcados.php">
+    <a href="calcados.php">
       <div class="flex justify-center mt-4 bg-4">
         <button class="animate-fade-in-3 rounded-3xl py-4 px-4 w-full text-white">CALÇADOS</button>
       </div>

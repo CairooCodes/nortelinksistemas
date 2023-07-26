@@ -1,5 +1,10 @@
 DirectoryIndex home.php
 RewriteEngine On
-RewriteCond %{HTTPS} Off
+RewriteCond %{HTTPS} off
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^home$ home.php [QSA,L,NC]
+
+RewriteRule ^construcao$ construcao.php [QSA,L,NC]
+RewriteRule ^farmacia$ farmacia.php [QSA,L,NC]
+RewriteRule ^supermercado$ supermercado.php [QSA,L,NC]

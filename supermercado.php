@@ -1,6 +1,6 @@
 <?php
-require "../db_config.php";
-require "../functions/get.php";
+require "db_config.php";
+require "functions/get.php";
 
 $functions = getFunctionsSupermercado();
 $functionsAutorize = getFunctionsAutorize();
@@ -14,61 +14,61 @@ $functionsProduto = getFunctionsProduto();
 <html lang="pt-br">
 
 <head>
-  <title>Norte Link - SinCom para Construção</title>
-  <?php include "../components/head_core.php"; ?>
+  <title>Norte Link - SinCom para Supermercado</title>
+  <?php include "./components/head_core.php"; ?>
 </head>
 
 <body>
-  <?php include "../components/navbar-blue.php"; ?>
+  <?php include "./components/navbar-blue.php"; ?>
   <section>
     <div>
-      <img class="hidden lg:block w-full" src="../assets/img/BannersconstruçãoDesktop.jpg" />
-      <img class="lg:hidden block w-full" src="../assets/img/Banners construçãoMobilecopiar.jpg" />
+      <img class="hidden lg:block w-full" src="./assets/img/Banners_supermercadoDesktop.jpg" />
+      <img class="lg:hidden block w-full" src="./assets/img/Banners supermercadoMobileopiar.jpg" />
     </div>
   </section>
 
   <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-12">
-		<div class="grid lg:grid-cols-3 gap-8">
-			<?php foreach ($functions as $function) { ?>
-				<div class="">
-					<div class="flex items-center justify-center mt-2">
-						<?php
-						if (!empty($function['img'])) {
-							$img = base64_encode($function['img']);
-							echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
-						}
-						?>
-						<h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
-							<?php echo $function['name']; ?>
-						</h1>
-					</div>
-					<div>
-						<h1 class="title-font mb-1 text-center text-lg pt-5">
-							<?php echo $function['description']; ?>
-						</h1>
-						<!-- <div class="flex justify-center">
+    <div class="grid lg:grid-cols-3 gap-9">
+      <?php foreach ($functions as $function) { ?>
+        <div>
+          <div class="flex items-center justify-center mt-2">
+            <?php
+            if (!empty($function['img'])) {
+              $img = base64_encode($function['img']);
+              echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
+            }
+            ?>
+            <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+              <?php echo $function['name']; ?>
+            </h1>
+          </div>
+          <div>
+            <h1 class="title-font mb-1 text-justify text-lg pt-5">
+              <?php echo $function['description']; ?>
+            </h1>
+            <!-- <div class="flex justify-center mt-10">
 							<a href="#">
 								<button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
 									Saiba Mais
 								</button>
 							</a>
 						</div> -->
-					</div>
-				</div>
-			<?php
-			}
-			?>
-		</div>
-	</section>
+          </div>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+  </section>
 
-  <div class="flex items-center p-3 md:p-0 bg-color2 py-10">
+  <div class="flex items-center p-3 md:p-0 bg-color2 py-20">
     <div class="container mx-auto">
       <div class="max-w-xl mx-auto md:my-5 bg-white p-2 md:p-5 rounded-md shadow-sm">
         <div class="text-center">
           <h1 class="my-3 text-color2 text-lg md:text-2xl font-semibold">Preencha o formulário para mais informações</h1>
         </div>
         <div class="m-7">
-          <form action="../config/api/create_lead_construcao.php" method="POST">
+          <form action="../config/api/create_lead_supermercado.php" method="POST">
             <div class="mb-6">
               <label for="name" class="block mb-2 text-sm text-black">Nome completo</label>
               <input type="text" name="name" placeholder="Digite aqui seu nome" class="w-full px-3 py-2 placeholder-gray-600 border border-gray-600 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />

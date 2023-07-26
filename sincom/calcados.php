@@ -3,7 +3,7 @@ require "../db_config.php";
 require "../functions/get.php";
 
 $functions = getFunctionsCalcados();
-$functions2 = getFunctionsGeral();
+$functionsAutorize = getFunctionsAutorize();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -39,7 +39,7 @@ $functions2 = getFunctionsGeral();
   <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-12">
     <div class="grid lg:grid-cols-3 gap-8">
       <?php foreach ($functions as $function) { ?>
-        <div class="border-t-4 border-b-4 border-color1 rounded-lg">
+        <div class="rounded-lg">
           <div class="flex items-center justify-center mt-2">
             <?php
             if (!empty($function['img'])) {
@@ -101,25 +101,27 @@ $functions2 = getFunctionsGeral();
     </div>
   </div>
 
-  <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-12">
-    <h1 class="title-font font-semibold text-center text-4xl pt-4 px-2 mb-16">Nossas outras ferramentas</h1>
-    <div class="grid lg:grid-cols-2 gap-9">
-      <?php foreach ($functions2 as $function2) { ?>
+  <section class="mx-auto max-w-7xl px-2 pt-4 mt-5 mb-12">
+    <h1 class="title-font font-semibold text-center text-3xl pt-4 px-2 mb-16">Nossas outras ferramentas</h1>
+
+    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">FORMAS DE AUTORIZAÇÃO</h1>
+    <div class="grid lg:grid-cols-3 gap-9">
+      <?php foreach ($functionsAutorize as $Autorize) { ?>
         <div class="">
           <div class="flex items-center justify-center">
             <?php
-            if (!empty($function2['img'])) {
-              $img = base64_encode($function2['img']);
+            if (!empty($Autorize['img'])) {
+              $img = base64_encode($Autorize['img']);
               echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
             }
             ?>
             <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
-              <?php echo $function2['name']; ?>
+              <?php echo $Autorize['name']; ?>
             </h1>
           </div>
           <div>
             <h1 class="title-font mb-1 text-center text-lg pt-5">
-              <?php echo $function2['description']; ?>
+              <?php echo $Autorize['description']; ?>
             </h1>
             <div class="flex justify-center mt-12 mb-5">
               <a href="#">

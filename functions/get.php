@@ -16,10 +16,10 @@ function getFunctionsFarmacia()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getFunctionsGeral()
+function getFunctionsAutorize()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM functions where categorie_id = 5 order by id desc");
+  $stmt = $pdo->prepare("select * from functions where categorie_id = 5 and subcategorie = 1 order by id asc;");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }

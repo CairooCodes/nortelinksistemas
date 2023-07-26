@@ -2,8 +2,13 @@
 require "../db_config.php";
 require "../functions/get.php";
 
-$functions = getFunctionsCalcados();
+$functions = getFunctionsSupermercado();
 $functionsAutorize = getFunctionsAutorize();
+$functionsCobrar = getFunctionsCobrar();
+$functionsPermitir = getFunctionsPermitir();
+$functionsAuditoria = getFunctionsAuditoria();
+$functionsControle = getFunctionsControle();
+$functionsProduto = getFunctionsProduto();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -101,9 +106,8 @@ $functionsAutorize = getFunctionsAutorize();
     </div>
   </div>
 
-  <section class="mx-auto max-w-7xl px-2 pt-4 mt-5 mb-12">
-    <h1 class="title-font font-semibold text-center text-3xl pt-4 px-2 mb-16">Nossas outras ferramentas</h1>
-
+  <section class="mx-auto max-w-4xl px-2 pt-4 mt-5">
+    <h1 class="title-font font-semibold text-center text-4xl pt-4 px-2 mb-16">Nossas outras ferramentas</h1>
     <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">FORMAS DE AUTORIZAÇÃO</h1>
     <div class="grid lg:grid-cols-3 gap-9">
       <?php foreach ($functionsAutorize as $Autorize) { ?>
@@ -122,6 +126,169 @@ $functionsAutorize = getFunctionsAutorize();
           <div>
             <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $Autorize['description']; ?>
+            </h1>
+            <div class="flex justify-center mt-12 mb-5">
+              <a href="#">
+                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+                  Saiba Mais
+                </button> -->
+              </a>
+            </div>
+          </div>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+
+    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">MODULO DE COBRANÇA</h1>
+    <div class="grid lg:grid-cols-2 gap-9">
+      <?php foreach ($functionsCobrar as $Cobrar) { ?>
+        <div class="">
+          <div class="flex items-center justify-center">
+            <?php
+            if (!empty($Cobrar['img'])) {
+              $img = base64_encode($Cobrar['img']);
+              echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
+            }
+            ?>
+            <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+              <?php echo $Cobrar['name']; ?>
+            </h1>
+          </div>
+          <div>
+            <h1 class="title-font mb-1 text-center text-lg pt-5">
+              <?php echo $Cobrar['description']; ?>
+            </h1>
+            <div class="flex justify-center mt-12 mb-5">
+              <a href="#">
+                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+                  Saiba Mais
+                </button> -->
+              </a>
+            </div>
+          </div>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+
+    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">PERMISSÕES</h1>
+    <div class="grid lg:grid-cols-2 gap-9">
+      <?php foreach ($functionsPermitir as $Permitir) { ?>
+        <div class="">
+          <div class="flex items-center justify-center">
+            <?php
+            if (!empty($Permitir['img'])) {
+              $img = base64_encode($Permitir['img']);
+              echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
+            }
+            ?>
+            <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+              <?php echo $Permitir['name']; ?>
+            </h1>
+          </div>
+          <div>
+            <h1 class="title-font mb-1 text-center text-lg pt-5">
+              <?php echo $Permitir['description']; ?>
+            </h1>
+            <div class="flex justify-center mt-12 mb-5">
+              <a href="#">
+                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+                  Saiba Mais
+                </button> -->
+              </a>
+            </div>
+          </div>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-4">
+      <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">AUDITORIA</h1>
+      <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">CONTROLE DE DESCONTOS POR NÍVEIS DE CARGOS</h1>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-9">
+      <?php foreach ($functionsAuditoria as $Auditoria) { ?>
+        <div class="">
+          <div class="flex items-center justify-center">
+            <?php
+            if (!empty($Auditoria['img'])) {
+              $img = base64_encode($Auditoria['img']);
+              echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
+            }
+            ?>
+            <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+              <?php echo $Auditoria['name']; ?>
+            </h1>
+          </div>
+          <div>
+            <h1 class="title-font mb-1 text-center text-lg pt-5">
+              <?php echo $Auditoria['description']; ?>
+            </h1>
+            <div class="flex justify-center mt-12 mb-5">
+              <a href="#">
+                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+                  Saiba Mais
+                </button> -->
+              </a>
+            </div>
+          </div>
+        </div>
+      <?php
+      }
+      ?>
+      <?php foreach ($functionsControle as $Controle) { ?>
+        <div class="">
+          <div class="flex items-center justify-center">
+            <?php
+            if (!empty($Controle['img'])) {
+              $img = base64_encode($Controle['img']);
+              echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
+            }
+            ?>
+            <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+              <?php echo $Controle['name']; ?>
+            </h1>
+          </div>
+          <div>
+            <h1 class="title-font mb-1 text-center text-lg pt-5">
+              <?php echo $Controle['description']; ?>
+            </h1>
+            <div class="flex justify-center mt-12 mb-5">
+              <a href="#">
+                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
+                  Saiba Mais
+                </button> -->
+              </a>
+            </div>
+          </div>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+
+    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">LEGENDA DE CORES</h1>
+    <div class="grid lg:grid-cols-1 gap-9">
+      <?php foreach ($functionsProduto as $Produto) { ?>
+        <div class="">
+          <div class="flex items-center justify-center">
+            <?php
+            if (!empty($Produto['img'])) {
+              $img = base64_encode($Produto['img']);
+              echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
+            }
+            ?>
+            <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+              <?php echo $Produto['name']; ?>
+            </h1>
+          </div>
+          <div>
+            <h1 class="title-font mb-1 text-center text-lg pt-5">
+              <?php echo $Produto['description']; ?>
             </h1>
             <div class="flex justify-center mt-12 mb-5">
               <a href="#">

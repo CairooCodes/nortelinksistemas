@@ -19,7 +19,47 @@ function getFunctionsFarmacia()
 function getFunctionsAutorize()
 {
   global $pdo;
-  $stmt = $pdo->prepare("select * from functions where categorie_id = 5 and subcategorie = 1 order by id asc;");
+  $stmt = $pdo->prepare("SELECT * FROM functions where categorie_id = 5 and subcategorie = 1 order by id asc;");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getFunctionsCobrar()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM functions where categorie_id = 5 and subcategorie = 2 order by id asc;");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getFunctionsPermitir()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM functions where categorie_id = 5 and subcategorie = 3 order by id asc;");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getFunctionsAuditoria()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM functions where categorie_id = 5 and subcategorie = 4 order by id asc;");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getFunctionsControle()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM functions where categorie_id = 5 and subcategorie = 5 order by id asc;");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getFunctionsProduto()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("select * from functions where categorie_id = 5 and subcategorie = 6 order by id asc;");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }

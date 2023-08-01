@@ -16,18 +16,27 @@ $functionsProduto = getFunctionsProduto();
 <head>
   <title>Norte Link - SinCom para Calçados</title>
   <?php include "./components/head_core.php"; ?>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/swiper.css">
 </head>
 
 <body>
   <?php include "./components/navbar-blue.php"; ?>
-  <section>
-    <div>
-      <img class="hidden lg:block w-full" src="./assets/img/Banners calçadosDesktop copiar.jpg" />
-      <img class="lg:hidden block w-full" src="./assets/img/Banners calçadosMobilecopiar.jpg" />
+  <section class="swiper swiper_banners lg:w-full">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img class="hidden lg:block w-full" src="./assets/img/Banners calçadosDesktop copiar.jpg" />
+            <img class="lg:hidden block w-full" src="./assets/img/Banners calçadosMobilecopiar.jpg" />
+        </div>
+        <div class="swiper-slide">
+            <img class="hidden lg:block w-full" src="./assets/img/Banners calçados2Desktop copiar.jpg" />
+            <img class="lg:hidden block w-full" src="./assets/img/Banners calçados2Mobilecopiar.jpg" />
+        </div>
     </div>
-  </section>
+    <div class="swiper-button-next text-white"></div>
+    <div class="swiper-button-prev text-white"></div>
+    <div class="swiper-pagination swiper-pagination-banners-main"></div>
+</section>
 
   <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-12">
     <div class="grid lg:grid-cols-3 gap-8">
@@ -299,7 +308,54 @@ $functionsProduto = getFunctionsProduto();
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".swiper_banners", {
-      slidesPerView: 1.0
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination-banners-main",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".swiper_banners_2", {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination-banners",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    var swiperup = new Swiper(".mySwiper-tumb", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper-tumbUpper", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiperup,
+      },
     });
   </script>
 </body>

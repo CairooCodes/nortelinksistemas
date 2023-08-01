@@ -15,28 +15,38 @@ $functionsProduto = getFunctionsProduto();
 
 <head>
   <title>Norte Link - SinCom para Supermercado</title>
+  <meta property="og:title" content="Norte Link - SinCom Supermercado" />
   <?php include "./components/head_core.php"; ?>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/swiper.css">
+  <style>
+    .read-more-button {
+      display: none;
+    }
+
+    .content-wrapper {
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
   <?php include "./components/navbar-blue.php"; ?>
   <section class="swiper swiper_banners lg:w-full">
     <div class="swiper-wrapper">
-        <div class="w-full swiper-slide">
-            <img class="hidden lg:block w-full" src="./assets/img/Banners_supermercadoDesktop.jpg" />
-            <img class="lg:hidden block w-full" src="./assets/img/Banners supermercadoMobilecopiar.jpg" />
-        </div>
-        <div class="w-full swiper-slide">
-            <img class="hidden lg:block w-full" src="./assets/img/Banners supermercado2Desktop.jpg" />
-            <img class="lg:hidden block w-full" src="./assets/img/Banners_supermercado2mobilecopiar.jpg" />
-        </div>
+      <div class="w-full swiper-slide">
+        <img class="hidden lg:block w-full" src="./assets/img/Banners supermercado2Desktop.jpg" />
+        <img class="lg:hidden block w-full" src="./assets/img/Banners_supermercado2mobilecopiar.jpg" />
+      </div>
+      <div class="w-full swiper-slide">
+        <img class="hidden lg:block w-full" src="./assets/img/Banners_supermercadoDesktop.jpg" />
+        <img class="lg:hidden block w-full" src="./assets/img/Banners supermercadoMobilecopiar.jpg" />
+      </div>
     </div>
     <div class="swiper-button-next text-white"></div>
     <div class="swiper-button-prev text-white"></div>
     <div class="swiper-pagination swiper-pagination-banners-main"></div>
-</section>
+  </section>
 
   <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-12">
     <div class="grid lg:grid-cols-3 gap-9">
@@ -49,21 +59,19 @@ $functionsProduto = getFunctionsProduto();
               echo "<img width='60' src='data:image/jpeg;base64," . $img . "'>";
             }
             ?>
-            <h1 class="title-font font-semibold text-center text-lg pt-4 px-2">
+            <h1 class="title-font font-semibold text-center text-md pt-4 px-2">
               <?php echo $function['name']; ?>
             </h1>
           </div>
           <div>
-            <h1 class="title-font mb-1 text-justify text-lg pt-5">
-              <?php echo $function['description']; ?>
-            </h1>
-            <!-- <div class="flex justify-center mt-10">
-							<a href="#">
-								<button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
-									Saiba Mais
-								</button>
-							</a>
-						</div> -->
+            <div class="card">
+              <div class="content-wrapper">
+                <p class="content text-black title-font mb-1 text-justify text-lg pt-5">
+                  <?php echo $function['description']; ?>
+                </p>
+              </div>
+              <button class="read-more-button text-color1" onclick="showMore(this)">Ler mais</button>
+            </div>
           </div>
         </div>
       <?php
@@ -105,8 +113,8 @@ $functionsProduto = getFunctionsProduto();
 
   <section class="mx-auto max-w-4xl px-2 pt-4 mt-5">
     <h1 class="title-font font-semibold text-center text-4xl pt-4 px-2 mb-16">Nossas outras ferramentas</h1>
-    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">FORMAS DE AUTORIZAÇÃO</h1>
-    <div class="grid lg:grid-cols-3 gap-9">
+    <h1 class="title-font font-semibold text-xl pt-4 px-2 mb-8 text-center">FORMAS DE AUTORIZAÇÃO</h1>
+    <div class="grid lg:grid-cols-3">
       <?php foreach ($functionsAutorize as $Autorize) { ?>
         <div class="">
           <div class="flex items-center justify-center">
@@ -124,13 +132,6 @@ $functionsProduto = getFunctionsProduto();
             <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $Autorize['description']; ?>
             </h1>
-            <div class="flex justify-center mt-12 mb-5">
-              <a href="#">
-                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
-                  Saiba Mais
-                </button> -->
-              </a>
-            </div>
           </div>
         </div>
       <?php
@@ -138,7 +139,7 @@ $functionsProduto = getFunctionsProduto();
       ?>
     </div>
 
-    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">MODULO DE COBRANÇA</h1>
+    <h1 class="title-font font-semibold text-xl pt-8 px-2 mb-8 text-center">MODULO DE COBRANÇA</h1>
     <div class="grid lg:grid-cols-2 gap-9">
       <?php foreach ($functionsCobrar as $Cobrar) { ?>
         <div class="">
@@ -157,13 +158,6 @@ $functionsProduto = getFunctionsProduto();
             <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $Cobrar['description']; ?>
             </h1>
-            <div class="flex justify-center mt-12 mb-5">
-              <a href="#">
-                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
-                  Saiba Mais
-                </button> -->
-              </a>
-            </div>
           </div>
         </div>
       <?php
@@ -171,7 +165,7 @@ $functionsProduto = getFunctionsProduto();
       ?>
     </div>
 
-    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">PERMISSÕES</h1>
+    <h1 class="title-font font-semibold text-xl pt-4 px-2 mb-8 text-center">PERMISSÕES</h1>
     <div class="grid lg:grid-cols-2 gap-9">
       <?php foreach ($functionsPermitir as $Permitir) { ?>
         <div class="">
@@ -190,24 +184,17 @@ $functionsProduto = getFunctionsProduto();
             <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $Permitir['description']; ?>
             </h1>
-            <div class="flex justify-center mt-12 mb-5">
-              <a href="#">
-                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
-                  Saiba Mais
-                </button> -->
-              </a>
-            </div>
           </div>
         </div>
       <?php
       }
       ?>
     </div>
-    <div class="grid lg:grid-cols-2 gap-4">
-      <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">AUDITORIA</h1>
-      <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">CONTROLE DE DESCONTOS POR NÍVEIS DE CARGOS</h1>
+    <div class="grid lg:grid-cols-2">
+      <h1 class="title-font font-semibold text-xl pt-16 px-2 mb-8 text-center">AUDITORIA</h1>
+      <h1 class="title-font font-semibold text-xl pt-16 px-2 mb-8 text-center">CONTROLE DE DESCONTOS POR NÍVEIS DE CARGOS</h1>
     </div>
-    <div class="grid lg:grid-cols-2 gap-9">
+    <div class="grid lg:grid-cols-2">
       <?php foreach ($functionsAuditoria as $Auditoria) { ?>
         <div class="">
           <div class="flex items-center justify-center">
@@ -225,13 +212,6 @@ $functionsProduto = getFunctionsProduto();
             <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $Auditoria['description']; ?>
             </h1>
-            <div class="flex justify-center mt-12 mb-5">
-              <a href="#">
-                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
-                  Saiba Mais
-                </button> -->
-              </a>
-            </div>
           </div>
         </div>
       <?php
@@ -254,13 +234,6 @@ $functionsProduto = getFunctionsProduto();
             <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $Controle['description']; ?>
             </h1>
-            <div class="flex justify-center mt-12 mb-5">
-              <a href="#">
-                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
-                  Saiba Mais
-                </button> -->
-              </a>
-            </div>
           </div>
         </div>
       <?php
@@ -268,8 +241,8 @@ $functionsProduto = getFunctionsProduto();
       ?>
     </div>
 
-    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">LEGENDA DE CORES</h1>
-    <div class="grid lg:grid-cols-1 gap-9">
+    <h1 class="title-font font-semibold text-xl pt-16 px-2 mb-8 text-center">LEGENDA DE CORES</h1>
+    <div class="grid lg:grid-cols-1 gap-9 pb-10">
       <?php foreach ($functionsProduto as $Produto) { ?>
         <div class="">
           <div class="flex items-center justify-center">
@@ -287,13 +260,6 @@ $functionsProduto = getFunctionsProduto();
             <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $Produto['description']; ?>
             </h1>
-            <div class="flex justify-center mt-12 mb-5">
-              <a href="#">
-                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
-                  Saiba Mais
-                </button> -->
-              </a>
-            </div>
           </div>
         </div>
       <?php
@@ -302,10 +268,36 @@ $functionsProduto = getFunctionsProduto();
     </div>
   </section>
 
-  <?php include "../components/footer.php"; ?>
+  <?php include "./components/footer.php"; ?>
   <script src="./assets/js/dark_mode.js"></script>
   <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    function showMore(button) {
+      const card = button.parentElement;
+      const content = card.querySelector('.content');
+      const buttonText = button.textContent;
+      if (buttonText === 'Ler mais') {
+        content.style.maxHeight = 'none';
+        button.textContent = 'Ler menos';
+      } else {
+        content.style.maxHeight = '6em';
+        button.textContent = 'Ler mais';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(function(card) {
+        const content = card.querySelector('.content');
+        const readMoreButton = card.querySelector('.read-more-button');
+        content.style.maxHeight = '6em';
+        if (content.scrollHeight > content.clientHeight) {
+          readMoreButton.style.display = 'block';
+        }
+      });
+    });
+  </script>
   <script>
     var swiper = new Swiper(".swiper_banners", {
       loop: true,

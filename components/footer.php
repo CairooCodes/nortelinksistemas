@@ -2,10 +2,14 @@
   <div class="max-w-6xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
     <div class="lg:grid lg:grid-cols-2">
       <div>
-        <img class="w-56" src="./assets/img/logo.png">
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-facebook"></i>
+        <div class="flex justify-center">
+          <img class="w-56" src="./assets/img/logo.png">
+        </div>
+        <div class="flex justify-center">
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+        </div>
       </div>
       <div>
         <p class="text-color2">

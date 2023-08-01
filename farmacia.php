@@ -15,6 +15,7 @@ $functionsProduto = getFunctionsProduto();
 
 <head>
   <title>Norte Link - SinCom para Farmácia</title>
+  <meta property="og:title" content="Norte Link - SinCom Farmácia" />
   <?php include "./components/head_core.php"; ?>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/swiper.css">

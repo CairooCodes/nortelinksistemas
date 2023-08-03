@@ -92,7 +92,7 @@ function getfunction($id)
                 </select>
               </div>
             </div>
-            <textarea name="description" id="description" type="text"><?php echo $function['description']; ?></textarea>
+            <textarea class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" name="description" id="description" type="text"><?php echo $function['description']; ?></textarea>
           </div>
           <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
             <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>

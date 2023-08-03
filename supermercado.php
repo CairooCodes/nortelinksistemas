@@ -190,11 +190,7 @@ $functionsProduto = getFunctionsProduto();
       }
       ?>
     </div>
-    <div class="grid lg:grid-cols-2">
-      <h1 class="title-font font-semibold text-xl pt-16 px-2 mb-8 text-center">AUDITORIA</h1>
-      <h1 class="title-font font-semibold text-xl pt-16 px-2 mb-8 text-center">CONTROLE DE DESCONTOS POR NÍVEIS DE CARGOS</h1>
-    </div>
-    <div class="grid lg:grid-cols-2">
+    <div class="grid lg:grid-cols-2 pt-20">
       <?php foreach ($functionsAuditoria as $Auditoria) { ?>
         <div class="">
           <div class="flex items-center justify-center">

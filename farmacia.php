@@ -198,10 +198,6 @@ $functionsProduto = getFunctionsProduto();
       }
       ?>
     </div>
-    <div class="grid lg:grid-cols-2 gap-4">
-      <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">AUDITORIA</h1>
-      <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">CONTROLE DE DESCONTOS POR NÍVEIS DE CARGOS</h1>
-    </div>
     <div class="grid lg:grid-cols-2 gap-9">
       <?php foreach ($functionsAuditoria as $Auditoria) { ?>
         <div class="">

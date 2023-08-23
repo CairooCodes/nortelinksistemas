@@ -25,19 +25,19 @@ $functionsProduto = getFunctionsProduto();
   <?php include "./components/navbar-blue.php"; ?>
   <section class="swiper swiper_banners lg:w-full">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img class="hidden lg:block w-full" src="./assets/img/Banners calçadosDesktop copiar.jpg" />
-            <img class="lg:hidden block w-full" src="./assets/img/Banners calçadosMobilecopiar.jpg" />
-        </div>
-        <div class="swiper-slide">
-            <img class="hidden lg:block w-full" src="./assets/img/Banners calçados2Desktop copiar.jpg" />
-            <img class="lg:hidden block w-full" src="./assets/img/Banners calçados2Mobilecopiar.jpg" />
-        </div>
+      <div class="swiper-slide">
+        <img class="hidden lg:block w-full" src="./assets/img/Banners calçadosDesktop copiar.jpg" />
+        <img class="lg:hidden block w-full" src="./assets/img/Banners calçadosMobilecopiar.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="hidden lg:block w-full" src="./assets/img/Banners calçados2Desktop copiar.jpg" />
+        <img class="lg:hidden block w-full" src="./assets/img/Banners calçados2Mobilecopiar.jpg" />
+      </div>
     </div>
     <div class="swiper-button-next text-white"></div>
     <div class="swiper-button-prev text-white"></div>
     <div class="swiper-pagination swiper-pagination-banners-main"></div>
-</section>
+  </section>
 
   <section class="mx-auto max-w-4xl px-2 pt-4 mt-5 mb-12">
     <div class="grid lg:grid-cols-3 gap-8">
@@ -106,6 +106,9 @@ $functionsProduto = getFunctionsProduto();
 
   <section class="mx-auto max-w-4xl px-2 pt-4 mt-5">
     <h1 class="title-font font-semibold text-center text-4xl pt-4 px-2 mb-16">Nossas outras ferramentas</h1>
+    <div>
+      <iframe width="849" height="486" src="https://www.youtube.com/embed/yEkZewmUvVs" title="sinCom - Novidades - Authorize" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">FORMAS DE AUTORIZAÇÃO</h1>
     <div class="grid lg:grid-cols-3 gap-9">
       <?php foreach ($functionsAutorize as $Autorize) { ?>
@@ -138,7 +141,9 @@ $functionsProduto = getFunctionsProduto();
       }
       ?>
     </div>
-
+    <div>
+      <iframe width="849" height="486" src="https://www.youtube.com/embed/CLw0eHree2g" title="sinCom - Cobrança - Parte #1 - Objetivo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">MODULO DE COBRANÇA</h1>
     <div class="grid lg:grid-cols-2 gap-9">
       <?php foreach ($functionsCobrar as $Cobrar) { ?>

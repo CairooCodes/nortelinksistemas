@@ -100,10 +100,7 @@ $functionsProduto = getFunctionsProduto();
 
   <section class="mx-auto max-w-4xl px-2 pt-4 mt-5">
     <h1 class="title-font font-semibold text-center text-4xl pt-4 px-2 mb-16">Nossas outras ferramentas</h1>
-    <div>
-      <iframe width="849" height="486" src="https://www.youtube.com/embed/yEkZewmUvVs" title="sinCom - Novidades - Authorize" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">FORMAS DE AUTORIZAÇÃO</h1>
+     <h1 class="title-font font-semibold text-xl pt-4 px-2 mb-8 text-center">FORMAS DE AUTORIZAÇÃO</h1>
     <div class="grid lg:grid-cols-3 gap-9">
       <?php foreach ($functionsAutorize as $Autorize) { ?>
         <div class="">
@@ -122,23 +119,16 @@ $functionsProduto = getFunctionsProduto();
             <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $Autorize['description']; ?>
             </h1>
-            <div class="flex justify-center mt-12 mb-5">
-              <a href="#">
-                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
-                  Saiba Mais
-                </button> -->
-              </a>
-            </div>
           </div>
         </div>
       <?php
       }
       ?>
     </div>
-    <div>
-      <iframe width="849" height="486" src="https://www.youtube.com/embed/CLw0eHree2g" title="sinCom - Cobrança - Parte #1 - Objetivo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="lg:p-10 p-5">
+      <iframe width="100%" height="486" src="https://www.youtube.com/embed/yEkZewmUvVs" title="sinCom - Novidades - Authorize" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">MODULO DE COBRANÇA</h1>
+    <h1 class="title-font font-semibold text-xl pt-8 px-2 mb-8 text-center">MODULO DE COBRANÇA</h1>
     <div class="grid lg:grid-cols-2 gap-9">
       <?php foreach ($functionsCobrar as $Cobrar) { ?>
         <div class="">
@@ -157,21 +147,17 @@ $functionsProduto = getFunctionsProduto();
             <h1 class="title-font mb-1 text-center text-lg pt-5">
               <?php echo $Cobrar['description']; ?>
             </h1>
-            <div class="flex justify-center mt-12 mb-5">
-              <a href="#">
-                <!-- <button class="shadow-cla-blue mt-4 mb-4 rounded-full bg-color2 px-4 py-2 text-white drop-shadow-md hover:scale-105">
-                  Saiba Mais
-                </button> -->
-              </a>
-            </div>
           </div>
         </div>
       <?php
       }
       ?>
     </div>
+    <div class="lg:p-10 p-5">
+      <iframe width="100%" height="486" src="https://www.youtube.com/embed/CLw0eHree2g" title="sinCom - Cobrança - Parte #1 - Objetivo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 
-    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">PERMISSÕES</h1>
+    <h1 class="title-font font-semibold text-xl pt-4 px-2 mb-16 text-center">PERMISSÕES</h1>
     <div class="grid lg:grid-cols-2 gap-9">
       <?php foreach ($functionsPermitir as $Permitir) { ?>
         <div class="">
@@ -264,7 +250,7 @@ $functionsProduto = getFunctionsProduto();
       ?>
     </div>
 
-    <h1 class="title-font font-semibold text-4xl pt-4 px-2 mb-16 text-center">LEGENDA DE CORES</h1>
+    <h1 class="title-font font-semibold text-xl pt-4 px-2 mb-16 text-center">LEGENDA DE CORES</h1>
     <div class="grid lg:grid-cols-1 gap-9">
       <?php foreach ($functionsProduto as $Produto) { ?>
         <div class="">
